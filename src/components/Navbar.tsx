@@ -3,6 +3,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import Icons from "./Icons";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
+import Cart from "./Cart";
 
 const Navbar = () => {
   const user = null;
@@ -14,7 +15,6 @@ const Navbar = () => {
             <div className="flex h-16 items-center">
               {/* TODO: Mobile Navbar */}
 
-              {/* TODO: Desktop Navbar */}
               <div className="ml-4 flex lg:ml-0">
                 <Link href={"/"}>
                   <Icons.logo className="h-6 w-6" />
@@ -61,7 +61,7 @@ const Navbar = () => {
                   )}
 
                   <div className="ml-4 flow-root lg:ml-6">
-                    {/* TODO: Cart */}
+                    <Cart />
                   </div>
                 </div>
               </div>
