@@ -16,7 +16,7 @@ import Image from "next/image";
 import { formatPrice } from "@/lib/utils";
 
 const Cart = () => {
-  const itemCount = 1;
+  const itemCount = 0;
   const fee = 5;
 
   return (
@@ -32,12 +32,12 @@ const Cart = () => {
         className="w-full flex flex-col pr-0 sm:max-w-lg"
       >
         <SheetHeader>
-          <SheetTitle className="space-y-0.5 pr-6">Cart(0)</SheetTitle>
+          <SheetTitle className="space-y-0.5">Cart(0)</SheetTitle>
         </SheetHeader>
         {itemCount > 0 ? (
           <>
-            <div className="flex w-full flex-col pr-6">{/* Cart logic */}</div>
-            <div className="space-y-4 pr-6">
+            <div className="flex w-full flex-col px-4">{/* Cart logic */}</div>
+            <div className="space-y-4 px-4">
               <Separator />
               <div className="space-y-1.5 text-sm">
                 <div className="flex">
@@ -54,7 +54,7 @@ const Cart = () => {
                 </div>
               </div>
 
-              <SheetFooter>
+              <SheetFooter className="p-0">
                 <SheetTrigger asChild>
                   <Link
                     href="/cart"
@@ -69,7 +69,7 @@ const Cart = () => {
             </div>
           </>
         ) : (
-          <div className="flex h-full flex-col items-center justify-center space-y-1">
+          <div className="flex h-full flex-col items-center justify-center space-y-1 px-4">
             <div
               aria-hidden="true"
               className="relative mb-4 h-60 w-60 text-muted-foreground"
